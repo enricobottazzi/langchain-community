@@ -72,7 +72,6 @@ def test_compatible_vectorstore_documentation() -> None:
         "HanaDB",
         "InMemoryVectorStore",
         "LanceDB",
-        "Milvus",
         "MomentoVectorIndex",
         "MyScale",
         "OpenSearchVectorSearch",

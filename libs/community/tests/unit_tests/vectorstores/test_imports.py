@@ -57,7 +57,6 @@ EXPECTED_ALL = [
     "Marqo",
     "MatchingEngine",
     "Meilisearch",
-    "Milvus",
     "MomentoVectorIndex",
     "MyScale",
     "MyScaleSettings",

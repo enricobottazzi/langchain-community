@@ -3,20 +3,6 @@
 One of the most common ways to store and search over unstructured data is to
 embed it and store the resulting embedding vectors, and then query the store
 and retrieve the data that are 'most similar' to the embedded query.
-
-**Class hierarchy:**
-
-.. code-block::
-
-    VectorStore --> <name>  # Examples: Annoy, FAISS, Milvus
-
-    BaseRetriever --> VectorStoreRetriever --> <name>Retriever  # Example: VespaRetriever
-
-**Main helpers:**
-
-.. code-block::
-
-    Embeddings, Document
 """  # noqa: E501
 
 import importlib
@@ -171,9 +157,6 @@ if TYPE_CHECKING:
     )
     from langchain_community.vectorstores.meilisearch import (
         Meilisearch,
-    )
-    from langchain_community.vectorstores.milvus import (
-        Milvus,
     )
     from langchain_community.vectorstores.momento_vector_index import (
         MomentoVectorIndex,
@@ -343,7 +326,6 @@ __all__ = [
     "Marqo",
     "MatchingEngine",
     "Meilisearch",
-    "Milvus",
     "MomentoVectorIndex",
     "MyScale",
     "MyScaleSettings",
@@ -440,7 +422,6 @@ _module_lookup = {
     "Marqo": "langchain_community.vectorstores.marqo",
     "MatchingEngine": "langchain_community.vectorstores.matching_engine",
     "Meilisearch": "langchain_community.vectorstores.meilisearch",
-    "Milvus": "langchain_community.vectorstores.milvus",
     "MomentoVectorIndex": "langchain_community.vectorstores.momento_vector_index",
     "MyScale": "langchain_community.vectorstores.myscale",
     "MyScaleSettings": "langchain_community.vectorstores.myscale",
