@@ -46,9 +46,6 @@ if TYPE_CHECKING:
     from langchain_community.chat_message_histories.momento import (
         MomentoChatMessageHistory,
     )
-    from langchain_community.chat_message_histories.mongodb import (
-        MongoDBChatMessageHistory,
-    )
     from langchain_community.chat_message_histories.neo4j import (
         Neo4jChatMessageHistory,
     )
@@ -95,7 +92,6 @@ __all__ = [
     "FileChatMessageHistory",
     "FirestoreChatMessageHistory",
     "MomentoChatMessageHistory",
-    "MongoDBChatMessageHistory",
     "Neo4jChatMessageHistory",
     "PostgresChatMessageHistory",
     "RedisChatMessageHistory",
@@ -120,7 +116,6 @@ _module_lookup = {
     "FileChatMessageHistory": "langchain_community.chat_message_histories.file",
     "FirestoreChatMessageHistory": "langchain_community.chat_message_histories.firestore",  # noqa: E501
     "MomentoChatMessageHistory": "langchain_community.chat_message_histories.momento",
-    "MongoDBChatMessageHistory": "langchain_community.chat_message_histories.mongodb",
     "Neo4jChatMessageHistory": "langchain_community.chat_message_histories.neo4j",
     "PostgresChatMessageHistory": "langchain_community.chat_message_histories.postgres",
     "RedisChatMessageHistory": "langchain_community.chat_message_histories.redis",
