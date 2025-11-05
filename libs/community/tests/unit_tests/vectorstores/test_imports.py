@@ -55,7 +55,6 @@ EXPECTED_ALL = [
     "ManticoreSearch",
     "ManticoreSearchSettings",
     "Marqo",
-    "MatchingEngine",
     "Meilisearch",
     "MomentoVectorIndex",
     "MyScale",

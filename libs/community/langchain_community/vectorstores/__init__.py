@@ -152,9 +152,6 @@ if TYPE_CHECKING:
     from langchain_community.vectorstores.marqo import (
         Marqo,
     )
-    from langchain_community.vectorstores.matching_engine import (
-        MatchingEngine,
-    )
     from langchain_community.vectorstores.meilisearch import (
         Meilisearch,
     )
@@ -324,7 +321,6 @@ __all__ = [
     "ManticoreSearch",
     "ManticoreSearchSettings",
     "Marqo",
-    "MatchingEngine",
     "Meilisearch",
     "MomentoVectorIndex",
     "MyScale",
@@ -420,7 +416,6 @@ _module_lookup = {
     "ManticoreSearch": "langchain_community.vectorstores.manticore_search",
     "ManticoreSearchSettings": "langchain_community.vectorstores.manticore_search",
     "Marqo": "langchain_community.vectorstores.marqo",
-    "MatchingEngine": "langchain_community.vectorstores.matching_engine",
     "Meilisearch": "langchain_community.vectorstores.meilisearch",
     "MomentoVectorIndex": "langchain_community.vectorstores.momento_vector_index",
     "MyScale": "langchain_community.vectorstores.myscale",
