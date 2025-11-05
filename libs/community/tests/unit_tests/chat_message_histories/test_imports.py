@@ -1,7 +1,6 @@
 from langchain_community.chat_message_histories import __all__, _module_lookup
 
 EXPECTED_ALL = [
-    "AstraDBChatMessageHistory",
     "CassandraChatMessageHistory",
     "ChatMessageHistory",
     "CosmosDBChatMessageHistory",

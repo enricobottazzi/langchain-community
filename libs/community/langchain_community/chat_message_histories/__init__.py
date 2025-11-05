@@ -19,9 +19,6 @@ import importlib
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from langchain_community.chat_message_histories.astradb import (
-        AstraDBChatMessageHistory,
-    )
     from langchain_community.chat_message_histories.cassandra import (
         CassandraChatMessageHistory,
     )
@@ -90,7 +87,6 @@ if TYPE_CHECKING:
     )
 
 __all__ = [
-    "AstraDBChatMessageHistory",
     "CassandraChatMessageHistory",
     "ChatMessageHistory",
     "CosmosDBChatMessageHistory",
@@ -116,7 +112,6 @@ __all__ = [
 ]
 
 _module_lookup = {
-    "AstraDBChatMessageHistory": "langchain_community.chat_message_histories.astradb",
     "CassandraChatMessageHistory": "langchain_community.chat_message_histories.cassandra",  # noqa: E501
     "ChatMessageHistory": "langchain_community.chat_message_histories.in_memory",
     "CosmosDBChatMessageHistory": "langchain_community.chat_message_histories.cosmos_db",  # noqa: E501
