@@ -185,9 +185,6 @@ if TYPE_CHECKING:
         MyScale,
         MyScaleSettings,
     )
-    from langchain_community.vectorstores.neo4j_vector import (
-        Neo4jVector,
-    )
     from langchain_community.vectorstores.opensearch_vector_search import (
         OpenSearchVectorSearch,
     )
@@ -354,7 +351,6 @@ __all__ = [
     "MongoDBAtlasVectorSearch",
     "MyScale",
     "MyScaleSettings",
-    "Neo4jVector",
     "NeuralDBClientVectorStore",
     "NeuralDBVectorStore",
     "OpenSearchVectorSearch",
@@ -453,7 +449,6 @@ _module_lookup = {
     "MongoDBAtlasVectorSearch": "langchain_community.vectorstores.mongodb_atlas",
     "MyScale": "langchain_community.vectorstores.myscale",
     "MyScaleSettings": "langchain_community.vectorstores.myscale",
-    "Neo4jVector": "langchain_community.vectorstores.neo4j_vector",
     "NeuralDBClientVectorStore": "langchain_community.vectorstores.thirdai_neuraldb",
     "NeuralDBVectorStore": "langchain_community.vectorstores.thirdai_neuraldb",
     "OpenSearchVectorSearch": "langchain_community.vectorstores.opensearch_vector_search",  # noqa: E501

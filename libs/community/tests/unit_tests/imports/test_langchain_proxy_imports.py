@@ -25,5 +25,6 @@ def test_vectorstores() -> None:
             "Weaviate",  # Removed from vectorstores module
             "Qdrant",  # Removed from vectorstores module
             "Pinecone",  # Removed from vectorstores module
+            "Neo4jVector",  # Removed from vectorstores module
         ]:
             assert issubclass(getattr(vectorstores, cls), VectorStore)

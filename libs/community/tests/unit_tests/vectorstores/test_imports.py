@@ -62,7 +62,6 @@ EXPECTED_ALL = [
     "MongoDBAtlasVectorSearch",
     "MyScale",
     "MyScaleSettings",
-    "Neo4jVector",
     "NeuralDBClientVectorStore",
     "NeuralDBVectorStore",
     "OpenSearchVectorSearch",
