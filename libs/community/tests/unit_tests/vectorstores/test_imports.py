@@ -93,7 +93,6 @@ EXPECTED_ALL = [
     "Typesense",
     "UpstashVectorStore",
     "USearch",
-    "VDMS",
     "Vald",
     "Vearch",
     "Vectara",

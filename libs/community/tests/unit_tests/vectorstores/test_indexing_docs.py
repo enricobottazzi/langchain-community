@@ -95,7 +95,6 @@ def test_compatible_vectorstore_documentation() -> None:
         "UpstashVectorStore",
         "EcloudESVectorStore",
         "Vald",
-        "VDMS",
         "Vearch",
         "Vectara",
         "VespaStore",

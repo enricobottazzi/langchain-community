@@ -279,9 +279,6 @@ if TYPE_CHECKING:
     from langchain_community.vectorstores.vald import (
         Vald,
     )
-    from langchain_community.vectorstores.vdms import (
-        VDMS,
-    )
     from langchain_community.vectorstores.vearch import (
         Vearch,
     )
@@ -397,7 +394,6 @@ __all__ = [
     "Typesense",
     "UpstashVectorStore",
     "USearch",
-    "VDMS",
     "Vald",
     "Vearch",
     "Vectara",
@@ -501,7 +497,6 @@ _module_lookup = {
     "UpstashVectorStore": "langchain_community.vectorstores.upstash",
     "USearch": "langchain_community.vectorstores.usearch",
     "Vald": "langchain_community.vectorstores.vald",
-    "VDMS": "langchain_community.vectorstores.vdms",
     "Vearch": "langchain_community.vectorstores.vearch",
     "Vectara": "langchain_community.vectorstores.vectara",
     "VectorStore": "langchain_core.vectorstores",
