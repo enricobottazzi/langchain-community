@@ -100,7 +100,6 @@ def test_compatible_vectorstore_documentation() -> None:
         "Vectara",
         "VespaStore",
         "VLite",
-        "Weaviate",
         "Yellowbrick",
         "ZepVectorStore",
         "ZepCloudVectorStore",

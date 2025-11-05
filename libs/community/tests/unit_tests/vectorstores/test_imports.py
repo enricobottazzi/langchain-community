@@ -100,7 +100,6 @@ EXPECTED_ALL = [
     "VectorStore",
     "VespaStore",
     "VLite",
-    "Weaviate",
     "Yellowbrick",
     "ZepVectorStore",
     "ZepCloudVectorStore",
