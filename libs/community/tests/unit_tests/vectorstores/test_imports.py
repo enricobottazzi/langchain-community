@@ -70,7 +70,6 @@ EXPECTED_ALL = [
     "PGEmbedding",
     "PGVector",
     "PathwayVectorClient",
-    "Pinecone",
     "Redis",
     "Relyt",
     "Rockset",

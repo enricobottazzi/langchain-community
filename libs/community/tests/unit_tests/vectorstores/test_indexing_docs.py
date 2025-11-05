@@ -78,7 +78,6 @@ def test_compatible_vectorstore_documentation() -> None:
         "OpenSearchVectorSearch",
         "OracleVS",
         "PGVector",
-        "Pinecone",
         "Redis",
         "Relyt",
         "Rockset",
