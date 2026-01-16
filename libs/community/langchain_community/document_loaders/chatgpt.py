@@ -6,7 +6,6 @@ from langchain_core.documents import Document
 
 from langchain_community.document_loaders.base import BaseLoader
 
-
 def concatenate_rows(message: dict, title: str) -> str:
     """
     Combine message information in a readable format ready to be used.
@@ -21,10 +20,34 @@ def concatenate_rows(message: dict, title: str) -> str:
         return ""
 
     sender = message["author"]["role"] if message["author"] else "unknown"
-    text = message["content"]["parts"][0]
-    date = datetime.datetime.fromtimestamp(message["create_time"]).strftime(
-        "%Y-%m-%d %H:%M:%S"
-    )
+
+    # Handle different content formats
+    content = message.get("content")
+    if content is None:
+        text = ""
+    elif isinstance(content, str):
+        # Content is a string directly
+        text = content
+    elif isinstance(content, dict):
+        # Content is a dict - check for "parts" key
+        if "parts" in content and isinstance(content["parts"], list) and len(content["parts"]) > 0:
+            text = content["parts"][0]
+        elif "text" in content:
+            # Alternative: content might have "text" key
+            text = content["text"]
+        else:
+            # Fallback: try to get any string value
+            text = str(content) if content else ""
+    else:
+        text = str(content) if content else ""
+
+    # Handle None create_time
+    if message.get("create_time") is not None:
+        date = datetime.datetime.fromtimestamp(message["create_time"]).strftime(
+            "%Y-%m-%d %H:%M:%S"
+        )
+    else:
+        date = "unknown date"
     return f"{title} - {sender} on {date}: {text}\n\n"
 
 
@@ -55,6 +78,7 @@ class ChatGPTLoader(BaseLoader):
                     for idx, key in enumerate(messages)
                     if not (
                         idx == 0
+                        and messages[key]["message"] is not None
                         and messages[key]["message"]["author"]["role"] == "system"
                     )
                 ]
